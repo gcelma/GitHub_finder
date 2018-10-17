@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GitHub Finder</title>
+        <link rel="shortcut icon" href="images/fav_github_finder.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/styles.css">
+    </head>
+    <body>
+        <header role="heading">
+            <img src="images/gitHub_logo.png" alt="GitHub finder logo">
+            <h1>GitHub finder</h1>
+        </header>
+        <main class="container" role="main">
+            <form>
+                <input type="text" placeholder="Search username..." name="search">
+                <button type="submit">Search</button>
+            </form>
+            <section>
+                <div class="user-profile">
+
+                    <!-- To be filled with API call - user info -->
+
+                </div>
+            </section>
+            <section>
+                <div class="repos-heading">
+                    <h3>Repositories</h3>
+                    <hr class="separator">
+                </div>
+                <div class="repos-info">
+                    
+                    <!-- To be filled with API call - user repos info -->
+                    
+                </div>
+                <div class="no-results">
+
+                    <!-- To be filled with API call - no user info -->
+
+                </div>
+            </section>
+        </main>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/GitHubApi/githubAPI_V3.js"></script>
+        <script src="scripts/views.js"></script>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+/* * {
+    border: 1px solid black;
+} */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* ------------------- Header ------------------- */
+
+header {
+    text-align: center;
+}
+
+header img {
+    max-height: 250px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin: 0px 0px 50px 0px;
+}
+
+
+
+/* -------------------- Main -------------------- */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    margin: 25px auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 30px #000;
+}
+
+
+
+/* --------- Form --------- */
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+form input {
+    flex-basis: 78%;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 35px 5px 20px 5px;
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid #b7b7b7;
+
+}
+
+form button {
+    flex-basis: 15%;
+    background: #cd2e2b;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 35px 5px 20px 5px;
+    font-size: 1rem;
+}
+
+
+
+/* ----- User profile ----- */
+
+.user-profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.user-profile img {
+    max-height: 200px;
+    margin-left: 25px;
+}
+
+.user-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.user-info p:first-of-type {
+    margin-bottom: 0px;
+}
+
+.user-info p:last-of-type {
+    margin-top: 0px;
+}
+
+.user-name {
+    font-size: 1.3rem;
+}
+
+
+
+/* ------ User Repos ------ */
+
+.repos-heading {
+    display: none;
+    margin: 0px 25px;
+}
+
+hr.separator {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.repos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0px 35px;
+}
+
+.repos p {
+    margin-left: 10px;
+}
+
+.repos-info hr {
+    width: 91%;
+}
+
+.repos-info hr:last-of-type {
+    border-width: 0px;
+}
+
+.icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.stargazers {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.forks {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 15px;
+}
+
+
+
+/* --- No result message --- */
+
+.no-results {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.no-results p {
+    flex-basis: 90%;
+    padding: 25px 15px;
+    background: #fde7e7;
+    border: 1px solid rgb(248, 182, 182);
+    border-radius: 5px;
+    margin: 0px 5px 20px 5px;
+}
+
+
+
+
+/* ------------- Media Queries for main container -------------- */
+
+@media (max-width: 800px) {
+    .container {
+      width: 80%;
+    }
+
+    form button {
+        flex-basis: 78%;
+        margin-top: 0px;
+    }
+
+    .no-results p {
+        flex-basis: 72%;
+    }
+
+    .user-profile{
+        justify-content: center;
+    }
+
+    .user-profile img {
+        margin-left: 0px;
+    }
+
+    .user-info {
+        align-items: center;
+    }
+  }
+
+ @media (min-width: 801px) {
+     .container {
+         width: 800px;
+     }
+ } 
