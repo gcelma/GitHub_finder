@@ -11,4 +11,4 @@ Use this app to search user info such as profile and repositories.
 
 ### Visit deployed version!
 
-- 
+- http://github_finder.surge.sh/
